@@ -13,9 +13,9 @@ class add_two_numbers {
             int sum  = first + second + carry;    
            
             l3.next = new ListNode(sum  % 10);
-            if (sum > 9) { 
-                carry = sum / 10; 
-            }
+
+            carry = sum / 10; 
+
 
             l1 = l1 == null ? null: l1.next;
             l2 = l2 == null ? null: l2.next;
